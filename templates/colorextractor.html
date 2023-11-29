@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+{% block content %}
+{% include 'header.html' %}
+<h1 class="heading-post">Image Colour Extractor</h1>
+<div class="block-image">
+    <div class="col-sm-12 col-md-6 col-lg-6 left_image">
+        <img src="{{ url_for('static', filename=image)}}" alt="uploaded picture" class="image">
+        <h2 style="color: white; padding:20px;">IMAGE</h2>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 right_image">
+        <table class="table" style="border: #222021 justify-content: center">
+            <thead>
+                <tr style="border: #222021">
+                    <th style="background:#bda99d; font-size: 20px; color: #222021">Sr No.</th>
+                    <th style="background:#bda99d; font-size: 20px; color: #222021">Color</th>
+                    <th style="background:#bda99d; font-size: 20px; color: #222021">Color Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in range(number_of_images) %}
+                    <tr>
+                        <td style="background:#bda99d; font-size: 18px; color: #222021">{{row+1}}</td>
+                        <td style="background-color: {{colors[row]}}"></td>
+                        <td style="background:#bda99d; font-size: 18px; color: #222021">{{colors[row]}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

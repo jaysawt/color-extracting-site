@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(to right, #2e22aa, #e44b9b);
+    background-position: center center;
+    overflow: auto;
+    flex-direction: column;
+}
+
+/*HEADER CONTENT*/
+.nav-link{
+    font-size: 30px;
+    color: white;                 /*#FFD700*/
+}
+.nav-item{
+    padding: 25px;
+}
+
+
+/*HEADING TITLE*/
+.heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFD700;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* FOOTER */
+.row{
+    display: inline;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+}
+
+
+/*ABOUT PAGE*/
+.about-heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFD700;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+.about-description{
+    font-size: 25px;
+    color: white;
+    text-align:center;
+    position: relative;
+    top: 100px;
+    padding-bottom: 250px;
+}
+
+/*MESSAGES*/
+.message{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position:relative;
+    top: 80px;
+}
+
+/*FORM*/
+.form-label{
+    font-size: 15px;
+    color: #FFD700;
+    padding-top: 20px;
+}
+
+
+.container-fluid {
+    text-align: center;
+    width:400px;
+    display: flex; /* Add display: flex to the container */
+    flex-direction: column; /* Stack its children vertically */
+    justify-content: center; /* Vertically center the children */
+    align-items: center; /* Horizontally center the children */
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.btn{
+    position:relative;
+    top: 35px;
+    right: 120px;
+}
+
+/*EXTRACTION PAGE*/
+.heading-post{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFD700;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.block-image{
+    height: 100vh;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.left_image{
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.right_image{
+    padding-top: 80px;
+}
+
+/*THE BELOW IS DONE SO THAT WHEN THE SCREEN BECOMES SMALL FOR MOBILE THE FOOTER  WILL GO BELOW THE BODY CONTENT AND CLASH WITH IT*/
+@media (max-width: 767px) {
+    .block-image{
+        display: inline;
+    }
+}
